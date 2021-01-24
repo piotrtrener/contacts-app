@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "app-contacts"
+  "defaultProject": "app-contacts",
+  "cli": {
+    "analytics": "5031c278-7daf-414d-9d5d-0f8b98471f6e"
+  }
 }
