@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactsModule } from './contacts/contacts.module';
+// import { ContactsRoutingModule } from './contacts/contacts-routing.module';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { ContactsModule } from './contacts/contacts.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    // ContactsRoutingModule,
     ContactsModule
   ],
   providers: [],

@@ -3,3 +3,11 @@
     font-size: 20px;
     text-align: center;
 }
+
+tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background-color: gray;
+}
