@@ -1,6 +1,6 @@
 export interface ContactModel {
     id: number;
     surname: String;
-    firstname: String;
+    firstName: String;
     phoneNumber: number;
 }

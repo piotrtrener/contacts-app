@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactsModule } from './contacts/contacts.module';
+import { ContactsService } from './contacts/contacts.service';
+import { HttpClientModule } from '@angular/common/http';
 // import { ContactsRoutingModule } from './contacts/contacts-routing.module';
 
 @NgModule({
@@ -14,9 +16,10 @@ import { ContactsModule } from './contacts/contacts.module';
     BrowserModule,
     AppRoutingModule,
     // ContactsRoutingModule,
-    ContactsModule
+    ContactsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ContactsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
