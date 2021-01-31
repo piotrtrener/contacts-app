@@ -14,4 +14,8 @@ export class ContactsService {
   getContacts(): Observable<any> {
     return this.httpClient.get(`${this.basaApiUrl}/contacts`);
   }
+
+  getContact(id: number): Observable<any> {
+    return this.httpClient.get(`${this.basaApiUrl}/contact/${id}`);
+  }
 }
