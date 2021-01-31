@@ -18,4 +18,8 @@ export class ContactsService {
   getContact(id: number): Observable<any> {
     return this.httpClient.get(`${this.basaApiUrl}/contact/${id}`);
   }
+
+  removeContact(id: number): Observable<any> {
+    return this.httpClient.delete(`${this.basaApiUrl}/contact/${id}`);
+  }
 }
