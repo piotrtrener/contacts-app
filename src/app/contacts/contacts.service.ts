@@ -7,23 +7,23 @@ import { Observable } from 'rxjs';
 })
 export class ContactsService {
 
-  private basaApiUrl = 'http://contactsapi';
+  private baseApiUrl = 'http://localhost:5000';
 
   constructor(private httpClient: HttpClient) { }
 
   getContacts(): Observable<any> {
-    return this.httpClient.get(`${this.basaApiUrl}/contacts`);
+    return this.httpClient.get(`${this.baseApiUrl}/contact`);
   }
 
   getContact(id: number): Observable<any> {
-    return this.httpClient.get(`${this.basaApiUrl}/contact/${id}`);
+    return this.httpClient.get(`${this.baseApiUrl}/contact/${id}`);
   }
 
   removeContact(id: number): Observable<any> {
-    return this.httpClient.delete(`${this.basaApiUrl}/contact/${id}`);
+    return this.httpClient.delete(`${this.baseApiUrl}/contact/${id}`);
   }
 
   addContact(data: {}): Observable<any> {
-    return this.httpClient.post(`${this.basaApiUrl}/contact/add`, data);
+    return this.httpClient.post(`${this.baseApiUrl}/contact`, data);
   }
 }
